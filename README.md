@@ -1,0 +1,2 @@
+# .github
+Template use only
