@@ -3,11 +3,13 @@ description: Report a bug in Optimus
 labels: kind/bug
 body:
   - type: textarea
+    id: warning
+    attributes:
+      label: Please report [Security Vulnerability Here](https://github.com/optimisticjc/jubilant-journey/security/policy)
+  - type: textarea
     id: description
     validations:
       required: true
-    attributes:
-      label: Please report [Security Vulnerability Here](https://github.com/optimisticjc/jubilant-journey/security/policy)
     attributes:
       label: Describe the bug
       description: >-
