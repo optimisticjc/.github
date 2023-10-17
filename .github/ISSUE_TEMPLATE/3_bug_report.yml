@@ -7,8 +7,8 @@ body:
     validations:
       required: true
     attributes:
-      label: ⚠️Please report [Security Vulnerability Here](https://github.com/optimisticjc/jubilant-journey/security/policy)⚠️
-    attributes:️
+      label: Please report [Security Vulnerability Here](https://github.com/optimisticjc/jubilant-journey/security/policy)
+    attributes:
       label: Describe the bug
       description: >-
         Describe the issue you are experiencing here to communicate to the
