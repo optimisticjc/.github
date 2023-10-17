@@ -5,7 +5,8 @@ body:
   - type: textarea
     id: warning
     attributes:
-      label: Please report [Security Vulnerability Here](https://github.com/optimisticjc/jubilant-journey/security/policy)
+      label: ⚠️Warning⚠️
+      description: Please report [Security Vulnerability Here](https://github.com/optimisticjc/jubilant-journey/security/policy)
   - type: textarea
     id: description
     validations:
