@@ -1,38 +1,74 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+name: Bug Report
+description: Report a bug in Optimus
+labels: kind/bug
+body:
+  - type: textarea
+    id: description
+    validations:
+      required: true
+    attributes:
+      label: ⚠️Please report [Security Vulnerability Here](https://github.com/optimisticjc/jubilant-journey/security/policy)⚠️
+      label: Describe the bug
+      description: >-
+        Describe the issue you are experiencing here to communicate to the
+        maintainers. Tell us what you were trying to do and what happened.
 
----
+        Provide a clear and concise description of what the problem is.
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: >-
+        Describe the expected behavior clearly and concisely.
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual behavior
+      description: >-
+        Describe the actual behavior clearly and concisely.
+  - type: textarea
+    id: how_to_reproduce
+    attributes:
+      label: How to Reproduce?
+      description: >-
+        Link to a small reproducer (preferably a Maven project if the issue is not Gradle-specific) or attach an archive containing the reproducer to the issue.
+      placeholder: |
+        Reproducer:
 
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+        Steps to reproduce the behavior:
+        1. 
+        2. 
+        3.
+  - type: markdown
+    id: environment
+    attributes:
+      value: |
+        ## Environment
+  - type: input
+    id: uname
+    attributes:
+      label: Output of `uname -a` or `ver`
+  - type: input
+    id: java_version
+    attributes:
+      label:  Output of `java -version`
+  - type: input
+    id: graalvm_version
+    attributes:
+      label:  GraalVM version (if different from Java)
+  - type: input
+    id: Optimus_version
+    attributes:
+      label:  Optimus version or git rev
+  - type: input
+    id: build_tool
+    attributes:
+      label:  Build tool (ie. output of `mvnw --version` or `gradlew --version`)
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional information
+      description: >
+        If you have any additional information for us, use the field below.
+        Please note, you can attach screenshots or screen recordings here, by
+        dragging and dropping files in the field below.
